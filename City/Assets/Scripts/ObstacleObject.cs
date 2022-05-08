@@ -8,13 +8,9 @@ namespace CityBuilding.Resources
         public enum ObstacleType { Wood, Rock }
         public ObstacleType obstacleType;
         public int resourceAmount = 10;
-
-        private void Awake() {
-            Debug.LogWarning("resourceAmont aşağıdaki şekilde de olabilir.");
             // resourceAmount = Random.Range(2, 10);
             // ya da 
             // resourceAmount = (int)(Random.value * 10f);
-        }
 
         private void OnMouseDown() {
             Debug.Log($"Clicked to {gameObject.name}");
