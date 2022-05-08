@@ -7,7 +7,6 @@ namespace CityBuilding.Managers
     {
         #region ResourcesVariables
         [Header("Resources")]
-        [Space(8)]
         public int maxWood;
         private int wood = 0;
 
@@ -20,11 +19,6 @@ namespace CityBuilding.Managers
         public int maxStandardC;
         private int standardC = 0;
         #endregion
-
-
-        private void Start() {
-            Debug.LogWarning("Generic kullanarak tek methoda indirgeyebilirsin.");
-        }
 
         /// <summary>
         /// Adds wood to the inventory
