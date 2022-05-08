@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Assets.Scripts
+namespace CityBuilding.Managers
 {
-    public class ResourceManager : MonoBehaviour
+    public class ResourceManager : MonoSingleton<ResourceManager>
     {
         [Header("Resources")]
         [Space(8)]

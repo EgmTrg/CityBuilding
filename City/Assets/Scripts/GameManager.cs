@@ -1,7 +1,7 @@
 using CityBuilding.TileManagement;
 using UnityEngine;
 
-namespace CityBuilding.GameManager
+namespace CityBuilding.Managers
 {
     public class GameManager : MonoBehaviour
     {
