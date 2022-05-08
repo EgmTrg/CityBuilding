@@ -14,7 +14,7 @@ namespace CityBuilding.Managers
         public float tileEndHeight = 0.84f;
 
         [Header("Resources")]
-        public GameObject stonePrefab;
+        public GameObject rockPrefab;
         public GameObject woodPrefab;
         [Range(0, 1)]
         public float obstacleChance = 0.3f;
@@ -78,7 +78,7 @@ namespace CityBuilding.Managers
             if (isWood)
                 spawnedObject = Instantiate(woodPrefab);
             else
-                spawnedObject = Instantiate(stonePrefab);
+                spawnedObject = Instantiate(rockPrefab);
 
             spawnedObject.transform.position = new Vector3(xPos, tileEndHeight, zPos);
         }

@@ -1,22 +1,26 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace CityBuilding.Managers
 {
     public class ResourceManager : MonoSingleton<ResourceManager>
     {
+        #region ResourcesVariables
         [Header("Resources")]
         [Space(8)]
         public int maxWood;
         private int wood = 0;
 
-        public int maxStone;
-        private int stone = 0;
+        public int maxRock;
+        private int rock = 0;
         
         public int maxPremiumC;
         private int premiumC = 0;
         
         public int maxStandardC;
         private int standardC = 0;
+        #endregion
+
 
         private void Start() {
             Debug.LogWarning("Generic kullanarak tek methoda indirgeyebilirsin.");
@@ -35,8 +39,8 @@ namespace CityBuilding.Managers
         /// Adds wood to the inventory
         /// </summary>
         /// <param name="amount">Amount to add directly to our existing</param>
-        public void AddStone(int amount) {
-            stone += amount;
+        public void AddRock(int amount) {
+            rock += amount;
         }
 
         /// <summary>
@@ -53,6 +57,14 @@ namespace CityBuilding.Managers
         /// <param name="amount">Amount to add directly to our existing</param>
         public void AddPremiumC(int amount) {
             premiumC += amount;
+        }
+
+        [ContextMenu("Print Current Resources")]
+        private void PrintCurrentResources() {
+            Debug.Log($"Wood: {wood}");
+            Debug.Log($"Rock: {rock}");
+            Debug.Log($"StandardC: {standardC}");
+            Debug.Log($"PremiumC: {premiumC}");
         }
     }
 }

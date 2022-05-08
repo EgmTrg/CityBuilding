@@ -321,7 +321,7 @@ MonoBehaviour:
   levelLength: 20
   tileSize: 1
   tileEndHeight: 0.84
-  stonePrefab: {fileID: 752215566199623441, guid: 79f778a47a8cca84fb3991d9b3288341, type: 3}
+  rockPrefab: {fileID: 752215566199623441, guid: 79f778a47a8cca84fb3991d9b3288341, type: 3}
   woodPrefab: {fileID: 4131604023340382305, guid: 9f7a42d4d763b6242be1b0ea3e858e02, type: 3}
   obstacleChance: 0.5
   xBounds: 4
@@ -652,8 +652,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec6d8e3441c1bfc40922ee8df2b85704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugMode: 0
   maxWood: 0
-  maxStone: 0
+  maxRock: 0
   maxPremiumC: 0
   maxStandardC: 0
 --- !u!1 &1942718616
