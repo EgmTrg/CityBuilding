@@ -11,6 +11,13 @@ namespace CityBuilding.Managers
         [SerializeField] private StandardUIReference standardUI;
         [SerializeField] private StandardUIReference premiumUI;
 
+        public void UpdateAllResources() {
+            UpdateWoodUI(ResourceManager.Instance.Wood, ResourceManager.Instance.MaxWood);
+            UpdateRockUI(ResourceManager.Instance.Rock, ResourceManager.Instance.MaxRock);
+            UpdatePremiumUI(ResourceManager.Instance.PremiumC, ResourceManager.Instance.MaxPremiumC);
+            UpdateStandardUI(ResourceManager.Instance.StandardC, ResourceManager.Instance.MaxStandardC);
+        }
+
         public void UpdateWoodUI(int currentAmount, int maxAmount) {
             woodUI.currentUIText.text = currentAmount.ToString();
             woodUI.maxUIText.text = "Max: " + maxAmount.ToString();
