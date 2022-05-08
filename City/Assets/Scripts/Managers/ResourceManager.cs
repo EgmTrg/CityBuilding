@@ -26,7 +26,7 @@ namespace CityBuilding.Managers
         /// <param name="amount">Amount to add directly to our existing</param>
         public void AddWood(int amount) {
             wood += amount;
-            // update the element ui to show the correct amount of wood
+            UIManager.Instance.UpdateWoodUI(wood, maxWood);
         }
 
         /// <summary>
@@ -35,6 +35,7 @@ namespace CityBuilding.Managers
         /// <param name="amount">Amount to add directly to our existing</param>
         public void AddRock(int amount) {
             rock += amount;
+            UIManager.Instance.UpdateRockUI(rock, maxRock);
         }
 
         /// <summary>
@@ -43,6 +44,7 @@ namespace CityBuilding.Managers
         /// <param name="amount">Amount to add directly to our existing</param>
         public void AddStandardC(int amount) {
             amount += amount;
+            UIManager.Instance.UpdateStandardUI(standardC, maxStandardC);
         }
 
         /// <summary>
@@ -51,6 +53,7 @@ namespace CityBuilding.Managers
         /// <param name="amount">Amount to add directly to our existing</param>
         public void AddPremiumC(int amount) {
             premiumC += amount;
+            UIManager.Instance.UpdatePremiumUI(premiumC, maxPremiumC);
         }
 
         [ContextMenu("Print Current Resources")]
