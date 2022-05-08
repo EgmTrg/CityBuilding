@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 886150499401861367}
   - component: {fileID: 2785175274594833181}
   - component: {fileID: 3649578823402810249}
+  - component: {fileID: -7160179690540556416}
   m_Layer: 0
   m_Name: Wood
   m_TagString: Untagged
@@ -49,7 +50,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4131604023340382305}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -96,3 +97,15 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &-7160179690540556416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4131604023340382305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 036cf5e884e3d054dbbb7da9d21cd910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
